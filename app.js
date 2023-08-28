@@ -21,7 +21,7 @@ const corsOptions = {
 
 // Apply CORS middleware with configured options
 //app.use(cors());
-//app.use(cors(corsOptions));
+app.use(cors(corsOptions));
 
 // Parse JSON from request bodies
 app.use(express.json());
