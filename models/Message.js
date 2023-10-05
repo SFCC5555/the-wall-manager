@@ -11,7 +11,7 @@ const MessageSchema = new mongoose.Schema({
         type: String, // sign field is of type String
         required: [true, 'Must provide a sign'], // Field is required with custom error message
         trim: true, // Remove whitespace from the beginning and end of the name
-        maxlength: [20, 'Name cannot be more than 30 characters'], // Maximum length constraint with custom error message
+        maxlength: [30, 'Name cannot be more than 30 characters'], // Maximum length constraint with custom error message
     },
     font: {
         type: String, // font field is of type String
