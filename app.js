@@ -23,8 +23,8 @@ const corsOptions = {
 
 // Middlewares
 
-//app.use(cors());
-app.use(cors(corsOptions)); // Apply CORS middleware with configured options
+app.use(cors());
+//app.use(cors(corsOptions)); // Apply CORS middleware with configured options
 app.use(express.json()); // Parse JSON from request bodies
 app.use("/api/v1/messages", require("./routes/messages")); // Define routes
 app.use(notFound); // Handle 404 Not Found
